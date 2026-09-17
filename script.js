@@ -25,8 +25,16 @@ function clearForm() {
   recalc();
 }
 
+// Default the date to today in the user's own time zone. toISOString()
+// would give the UTC date, which rolls over to tomorrow during the evening
+// in US time zones.
 const dateInput = document.getElementById('formDate');
-dateInput.value = new Date().toISOString().slice(0, 10);
+const today = new Date();
+dateInput.value = [
+  today.getFullYear(),
+  String(today.getMonth() + 1).padStart(2, '0'),
+  String(today.getDate()).padStart(2, '0')
+].join('-');
 
 function recalc() {
   const incomeSum = parseAmount(document.getElementById('incomeInput').value);
