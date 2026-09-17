@@ -8,7 +8,7 @@ A mobile-friendly web form for collecting monthly household income and expense i
 
 Open the following link in Safari on your iPhone or in any web browser on a computer:
 
-**https://envoyprototype.github.io/RRH-Budget-Form/**
+**https://jmrogers-it.github.io/RRH-Budget-Form/**
 
 No app download or login is required.
 
@@ -117,4 +117,18 @@ To change colors or fonts, edit `styles.css`. The main brand color variables are
 
 ---
 
-*Last updated May 2026*
+## Publishing Changes
+
+The live form is served by GitHub Pages from the `main` branch of
+[jmrogers-it/RRH-Budget-Form](https://github.com/jmrogers-it/RRH-Budget-Form).
+Any commit pushed to `main` goes live at the link above within a minute or
+two; a hard refresh (Ctrl+Shift+R, or Cmd+Shift+R on a Mac) clears the
+cached copy if you still see the old version.
+
+Because the URL is built from the GitHub account name and the repository
+name, renaming either one changes the link staff use — update this README
+and re-share the link if that happens.
+
+---
+
+*Last updated September 2026*
